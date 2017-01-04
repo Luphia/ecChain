@@ -1,0 +1,30 @@
+{
+  "name": "ecchain",
+  "dependencies": {
+    "leveldown": "latest",
+    "levelup": "latest"
+  },
+  "scripts": {
+    "postinstall": "cd node_modules/leveldown && HOME=~/.electron-gyp node-gyp rebuild --target=1.4.13 --arch=x64 --dist-url=https://atom.io/download/atom-shell",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "latest"
+  },
+  "description": "Simple block chain library",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://luphia@github.com/Luphia/ecChain.git"
+  },
+  "keywords": [
+    "blockchain"
+  ],
+  "author": "Luphia Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Luphia/ecChain/issues"
+  },
+  "homepage": "https://github.com/Luphia/ecChain#readme"
+}

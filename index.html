@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>ecChain</title>
+</head>
+<body>
+  <script>
+    var levelup = require('levelup');
+    var leveldown = require('leveldown');
+
+    var db = levelup('./db', { db: leveldown });
+    window.db = db;
+  </script>
+</body>
+</html>
